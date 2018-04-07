@@ -38,7 +38,10 @@ function createButtons() {
         //apply styling here
         $(crystalButton).addClass('crystal-button');
         $(crystalButton).addClass('btn');
-        $(crystalButton).addClass('hide-value');
+        $(crystalButton).addClass('col-xs-6');
+        $(crystalButton).addClass('col-sm-6');
+        $(crystalButton).addClass('col-md-3');
+        $(crystalButton).addClass('col-lg-3');
         $(crystalButton).attr('id', currentCrystal);
 
         //apply event listener
@@ -86,7 +89,7 @@ function checkGameStatus() {
         isGameInProgress = false;
 
     }
-    $("#count").html('Wins:' + winCount + '/' + 'Losses:' + lossCount);
+    $("#count").html('Wins: ' + winCount + ' ' + 'Losses: ' + lossCount);
 }
 
 createButtons();

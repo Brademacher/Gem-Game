@@ -1,0 +1,7 @@
+body {
+    background-image: url("./Images/caveBackground.png");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-position: center;
+    background-size: 100% 160%;
+}

@@ -10,11 +10,11 @@
     <title>Crystal Collector!</title>
 </head>
 <body>
-    <div class="container heading">
-        <h1>Crystal Collector!!!</h1>
+    <div class="container heading border border-primary text-white bg-primary rounded">
+        <h1 class="text-center p-6">Crystal Collector!!!</h1>
     </div>
 
-    <div class="container directions">
+    <div class="container directions text-white">
         <p>You will be given a random number at the start of the game.</p>
 
         <p>There are four crystals below. By clickin on a crystal, you will add a specific amount of points to your total score.</p>
@@ -26,19 +26,26 @@
         <p>Each time the game starts, the values of each crystal will change.</p>
     </div>
 
-    <div class="container" id="target"></div>
-
+    <div class="container">
+        <h3 class="text-center text-white">Target Number</h3>
+        <div class="container text-center text-white" id="target"></div>
+    </div>
     <div class="container" id="crystal"></div>
 
-    <div class="container" id="currentTotal"></div>
+    <div class="container">
+        <h3 class="text-center text-white">Current Total</h3>
+        <div class="container text-center text-white" id="currentTotal"></div>
+    </div>
 
-    <div class="container" id="wins" style="display:none">You WON!</div>
+    <div class="container bg-success text-white text-center" id="wins" style="display:none">You WON!</div>
 
-    <div class="container" id="losses" style="display:none">You LOSER!</div>
+    <div class="container bg-danger text-white text center" id="losses" style="display:none">You LOSE!</div>
 
-    <div class="container" id="count"></div>
+    <div class="container text-white" id="count"></div>
 
-    <button onclick="initializeGame()">Retry</button>
+    <div class="container">
+        <button onclick="initializeGame()">Retry</button>
+    </div>
 
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
